@@ -2,6 +2,8 @@
 #include "TextureManager.h"
 
 Engine* Engine::s_Instance = nullptr;
+uint32_t playerYPos = 0;
+uint32_t playerXPos = 200;
 
 /** @brief Init
   * Engine init
@@ -72,7 +74,7 @@ void Engine::Render(){
     SDL_RenderClear(m_Renderer);
 
     //TextureManager::GetInstance()->Draw("spider", counter1,counter1, 220, 321); playerPosY
-    TextureManager::GetInstance()->Draw("rect1", 200,0, 100, 50);
+    TextureManager::GetInstance()->Draw("rect1", playerXPos, playerYPos, 190, 500);
     SDL_RenderPresent(m_Renderer);
 
 }
@@ -93,6 +95,30 @@ void Engine::Events(){
             switch (event.key.keysym.sym){
                 case SDLK_ESCAPE:
                     Quit();
+                    break;
+                case SDLK_DOWN:
+                    if(playerYPos < 500)
+                    {
+                        playerYPos += 5;
+                    }
+                    break;
+                case SDLK_UP:
+                    if(playerYPos > 0)
+                    {
+                        playerYPos -= 5;
+                    }
+                    break;
+                case SDLK_RIGHT:
+                    if(playerXPos < 250)
+                    {
+                        playerXPos += 5;
+                    }
+                    break;
+                case SDLK_LEFT:
+                    if(playerXPos > 0)
+                    {
+                        playerXPos -= 5;
+                    }
                     break;
             }
             break;
