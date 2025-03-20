@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1707123452 source:d:\yusufdosyalar\cpp_projects\sdl_tutorial\softengine\main.cpp
+	"Engine.h"
+
+1707123748 d:\yusufdosyalar\cpp_projects\sdl_tutorial\softengine\src\core\engine.h
+	"SDL.h"
+	"SDL_image.h"
+
+1708524630 source:d:\yusufdosyalar\cpp_projects\sdl_tutorial\softengine\src\core\engine.cpp
+	"Engine.h"
+	"TextureManager.h"
+
+1704719708 source:d:\yusufdosyalar\cpp_projects\sdl_tutorial\softengine\src\graphics\texturemanager.cpp
+	"TextureManager.h"
+	"Engine.h"
+
+1704716329 d:\yusufdosyalar\cpp_projects\sdl_tutorial\softengine\src\graphics\texturemanager.h
+	<string>
+	<SDL.h>
+	<map>
+
