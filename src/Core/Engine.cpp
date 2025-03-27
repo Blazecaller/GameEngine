@@ -1,9 +1,8 @@
 #include "Engine.h"
 #include "TextureManager.h"
-
 Engine* Engine::s_Instance = nullptr;
-uint32_t playerYPos = 0;
-uint32_t playerXPos = 200;
+uint32_t playerYPos = 10;
+uint32_t playerXPos = 250;
 
 /** @brief Init
   * Engine init
@@ -30,6 +29,7 @@ bool Engine::Init(){
         SDL_Log("Failed to create Renderer: %s", SDL_GetError());
         return false;
     }
+    TTF_Init();
     TextureManager::GetInstance()->Load("spider", "assets/spider.jpg");
     TextureManager::GetInstance()->Load("rect1", "assets/rect1.jpg");
     return m_IsRunning = true;
@@ -46,6 +46,7 @@ void Engine::Clean(){
     SDL_DestroyRenderer(m_Renderer);
     SDL_DestroyWindow(m_Window);
     IMG_Quit();
+    TTF_Quit();
     SDL_Quit();
 }
 
@@ -73,7 +74,7 @@ void Engine::Render(){
     SDL_SetRenderDrawColor(m_Renderer, 0, 127, 127, 255);
     SDL_RenderClear(m_Renderer);
 
-    //TextureManager::GetInstance()->Draw("spider", counter1,counter1, 220, 321); playerPosY
+    TextureManager::GetInstance()->Draw("spider", (playerXPos+30)*2,(playerYPos+40)*1.5, 220, 321);
     TextureManager::GetInstance()->Draw("rect1", playerXPos, playerYPos, 190, 500);
     SDL_RenderPresent(m_Renderer);
 

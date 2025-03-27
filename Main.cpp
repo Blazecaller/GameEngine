@@ -1,9 +1,7 @@
 #include "Engine.h"
-
 int main(int argc, char** agrv)
 {
     Engine::GetInstance()->Init();
-
     while(Engine::GetInstance()->IsRunning())
     {
         Engine::GetInstance()->Events();  // Events such as key activation, quit etc..

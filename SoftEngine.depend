@@ -35,3 +35,24 @@
 	<SDL.h>
 	<map>
 
+1743095651 source:d:\2025_stale\projects\cpp\gameengine\main.cpp
+	"Engine.h"
+
+1743095659 d:\2025_stale\projects\cpp\gameengine\src\core\engine.h
+	"SDL.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+
+1743094851 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
+	"Engine.h"
+	"TextureManager.h"
+
+1743092755 d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.h
+	<string>
+	<SDL.h>
+	<map>
+
+1743092755 source:d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.cpp
+	"TextureManager.h"
+	"Engine.h"
+

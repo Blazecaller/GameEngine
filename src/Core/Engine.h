@@ -3,7 +3,7 @@
 
 #include "SDL.h"
 #include "SDL_image.h"
-
+#include "SDL_ttf.h"
 #define SCREEN_WIDTH  960
 #define SCREEN_HEIGHT 640
 
