@@ -9,12 +9,19 @@
 			<Target title="Debug">
 				<Option output="bin/Debug/SoftEngine" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-g" />
 					<Add directory="src/Core" />
 					<Add directory="src/Graphics" />
+					<Add directory="src/Physics" />
+					<Add directory="src/Object" />
+					<Add directory="src/Characters" />
+					<Add directory="src/Characrers" />
+					<Add directory="src/Character" />
+					<Add directory="src/Animation" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,10 +29,17 @@
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Compiler>
 					<Add option="-O2" />
 					<Add directory="src/Core" />
 					<Add directory="src/Graphics" />
+					<Add directory="src/Physics" />
+					<Add directory="src/Object" />
+					<Add directory="src/Characters" />
+					<Add directory="src/Characrers" />
+					<Add directory="src/Character" />
+					<Add directory="src/Animation" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -37,14 +51,22 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Main.cpp" />
+		<Unit filename="src/Animation/Animation.cpp" />
+		<Unit filename="src/Animation/Animation.h" />
+		<Unit filename="src/Characters/Character.h" />
+		<Unit filename="src/Characters/Demonic.cpp" />
+		<Unit filename="src/Characters/Demonic.h" />
+		<Unit filename="src/Characters/Warrior.cpp" />
+		<Unit filename="src/Characters/Warrior.h" />
 		<Unit filename="src/Core/Engine.cpp" />
 		<Unit filename="src/Core/Engine.h" />
 		<Unit filename="src/Graphics/TextureManager.cpp" />
 		<Unit filename="src/Graphics/TextureManager.h" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Unit filename="src/Object/GameObject.h" />
+		<Unit filename="src/Object/IObject.h" />
+		<Unit filename="src/Physics/RigidBody.h" />
+		<Unit filename="src/Physics/Transform.h" />
+		<Unit filename="src/Physics/Vector2D.h" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

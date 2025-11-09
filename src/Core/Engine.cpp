@@ -1,8 +1,9 @@
 #include "Engine.h"
 #include "TextureManager.h"
+#include "Demonic.h"
+
 Engine* Engine::s_Instance = nullptr;
-uint32_t playerYPos = 10;
-uint32_t playerXPos = 250;
+Demonic* player = nullptr;
 
 /** @brief Init
   * Engine init
@@ -30,10 +31,11 @@ bool Engine::Init(){
         return false;
     }
     TTF_Init();
-    TextureManager::GetInstance()->Load("spider", "assets/spider.jpg");
-    TextureManager::GetInstance()->Load("rect1", "assets/rect1.jpg");
-    return m_IsRunning = true;
+    TextureManager::GetInstance()->Load("player", "assets/Karasu_tengu/Idle.png");
+    player = new Demonic(new Properties(100, 200, 128, 128, "player"));
 
+
+    return m_IsRunning = true;
 }
 
 /** @brief Clean
@@ -63,7 +65,7 @@ void Engine::Quit(){
   * @todo: document this function
   */
 void Engine::Update(){
-
+    player->Update(0);
 }
 
 /** @brief Render
@@ -74,8 +76,7 @@ void Engine::Render(){
     SDL_SetRenderDrawColor(m_Renderer, 0, 127, 127, 255);
     SDL_RenderClear(m_Renderer);
 
-    TextureManager::GetInstance()->Draw("spider", (playerXPos+30)*2,(playerYPos+40)*1.5, 220, 321);
-    TextureManager::GetInstance()->Draw("rect1", playerXPos, playerYPos, 190, 500);
+    player->Draw();
     SDL_RenderPresent(m_Renderer);
 
 }
@@ -96,30 +97,6 @@ void Engine::Events(){
             switch (event.key.keysym.sym){
                 case SDLK_ESCAPE:
                     Quit();
-                    break;
-                case SDLK_DOWN:
-                    if(playerYPos < 500)
-                    {
-                        playerYPos += 5;
-                    }
-                    break;
-                case SDLK_UP:
-                    if(playerYPos > 0)
-                    {
-                        playerYPos -= 5;
-                    }
-                    break;
-                case SDLK_RIGHT:
-                    if(playerXPos < 250)
-                    {
-                        playerXPos += 5;
-                    }
-                    break;
-                case SDLK_LEFT:
-                    if(playerXPos > 0)
-                    {
-                        playerXPos -= 5;
-                    }
                     break;
             }
             break;

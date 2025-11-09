@@ -3,10 +3,7 @@
 
 TextureManager* TextureManager::s_Instance = nullptr;
 
-/** @brief Load
-  *
-  * @todo: document this function
-  */
+
 bool TextureManager::Load(std::string id, std::string filename){
     SDL_Surface* surface = IMG_Load(filename.c_str());
     if(surface == nullptr){
@@ -23,30 +20,26 @@ bool TextureManager::Load(std::string id, std::string filename){
     return true;
 }
 
-/** @brief Draw
-  *
-  * @todo: document this function
-  */
+
 void TextureManager::Draw(std::string id, int x, int y, int width, int height, SDL_RendererFlip flip){
-    SDL_Rect srcRect = {0, 0, width, height};//source defined
-    SDL_Rect dstRect = {x, y, width, height};//destination defined
+    SDL_Rect srcRect = {0, 0, width, height};
+    SDL_Rect dstRect = {x, y, width, height};
     SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 
 }
 
-/** @brief Drop
-  *
-  * @todo: document this function
-  */
+void TextureManager::DrawFrame(std::string id, int x, int y, int width, int height, int row, int frame, SDL_RendererFlip flip){
+    SDL_Rect srcRect = {width*frame, height*(row-1), width, height};
+    SDL_Rect dstRect = {x, y, width, height};
+    SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
+
+}
+
 void TextureManager::Drop(std::string id){
     SDL_DestroyTexture(m_TextureMap[id]);
     m_TextureMap.erase(id); //texture is destroyed but not removed; erase it (no need to put that in memory anymore).
 }
 
-/** @brief Clean
-  *
-  * @todo: document this function
-  */
 void TextureManager::Clean(){
     std::map<std::string, SDL_Texture*>::iterator it;
     for(it = m_TextureMap.begin(); it != m_TextureMap.end(); it++)
