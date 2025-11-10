@@ -35,24 +35,25 @@
 	<SDL.h>
 	<map>
 
-1743095651 source:d:\2025_stale\projects\cpp\gameengine\main.cpp
+1743243557 source:d:\2025_stale\projects\cpp\gameengine\main.cpp
 	"Engine.h"
 
-1743095659 d:\2025_stale\projects\cpp\gameengine\src\core\engine.h
+1743243557 d:\2025_stale\projects\cpp\gameengine\src\core\engine.h
 	"SDL.h"
 	"SDL_image.h"
 	"SDL_ttf.h"
 
-1743094851 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
+1762714639 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
+	"Demonic.h"
 
-1743092755 d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.h
+1762635706 d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.h
 	<string>
 	<SDL.h>
 	<map>
 
-1743092755 source:d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.cpp
+1762637466 source:d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.cpp
 	"TextureManager.h"
 	"Engine.h"
 
@@ -130,4 +131,52 @@
 
 1762698249 c:\projects\gameengine\src\physics\rigidbody.h
 	"Vector2D.h"
+
+1762693023 source:d:\2025_stale\projects\cpp\gameengine\src\animation\animation.cpp
+	"Animation.h"
+
+1762693853 d:\2025_stale\projects\cpp\gameengine\src\animation\animation.h
+	<string>
+	<SDL.h>
+	"TextureManager.h"
+
+1762699213 source:d:\2025_stale\projects\cpp\gameengine\src\characters\demonic.cpp
+	"Demonic.h"
+	"TextureManager.h"
+
+1762698000 d:\2025_stale\projects\cpp\gameengine\src\characters\demonic.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
+
+1762693994 d:\2025_stale\projects\cpp\gameengine\src\characters\character.h
+	"GameObject.h"
+	"Transform.h"
+	"string"
+
+1762693976 d:\2025_stale\projects\cpp\gameengine\src\object\gameobject.h
+	"IObject.h"
+	"Transform.h"
+	"SDL.h"
+	"string"
+
+1762693948 d:\2025_stale\projects\cpp\gameengine\src\object\iobject.h
+
+1762698826 d:\2025_stale\projects\cpp\gameengine\src\physics\transform.h
+	"Vector2D.h"
+
+1762623743 d:\2025_stale\projects\cpp\gameengine\src\physics\vector2d.h
+	<iostream>
+
+1762698249 d:\2025_stale\projects\cpp\gameengine\src\physics\rigidbody.h
+	"Vector2D.h"
+
+1762714833 source:d:\2025_stale\projects\cpp\gameengine\src\characters\warrior.cpp
+	"Warrior.h"
+	"TextureManager.h"
+
+1762714795 d:\2025_stale\projects\cpp\gameengine\src\characters\warrior.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
 

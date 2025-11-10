@@ -31,7 +31,7 @@ bool Engine::Init(){
         return false;
     }
     TTF_Init();
-    TextureManager::GetInstance()->Load("player", "assets/Karasu_tengu/Idle.png");
+    TextureManager::GetInstance()->Load("player", "assets/Karasu_tengu/Attack_1.png");
     player = new Demonic(new Properties(100, 200, 128, 128, "player"));
 
 
