@@ -1,10 +1,11 @@
 #include "Demonic.h"
 #include "TextureManager.h"
+#include "Input.h"
 
 Demonic::Demonic(Properties *props): Character(props){
     m_Animation = new Animation();
     m_RigidBody = new RigidBody();
-    m_Animation->SetProps(m_TextureID, 1, 6, 120, SDL_FLIP_NONE);
+    m_Animation->SetProps(m_TextureID, 1, 8, 100, SDL_FLIP_NONE);
 
 }
 
@@ -13,10 +14,25 @@ void Demonic::Draw(){
 }
 
 void Demonic::Update(float dt){
-    m_RigidBody->Update(0.6);
-    m_RigidBody->ApplyForceX(15);
+    static SDL_RendererFlip lastDir = SDL_FLIP_NONE;
+    m_Animation->SetProps("player", 1, 6, 100, lastDir);
+    m_RigidBody->UnsetForce();
+    if(Input::GetInstance()->GetKeyDown(SDL_SCANCODE_D)){
+        lastDir = SDL_FLIP_NONE;
+        m_Animation->SetProps("player_run", 1, 8, 100, lastDir);
+        m_RigidBody->ApplyForceX(FORWARD*5);
+    }
+    if(Input::GetInstance()->GetKeyDown(SDL_SCANCODE_A)){
+        lastDir = SDL_FLIP_HORIZONTAL;
+        m_Animation->SetProps("player_run", 1, 8, 100, lastDir);
+        m_RigidBody->ApplyForceX(BACKWARD*5);
+    }
+    SDL_Log("%f",dt);
     m_Transform->TranslateX(m_RigidBody->Position().X);
-    m_Transform->TranslateY(m_RigidBody->Position().Y);
+    m_RigidBody->Update(dt);
+
+
+    //m_Transform->TranslateY(m_RigidBody->Position().Y);
 
 
     m_Animation->Update();

@@ -35,18 +35,21 @@
 	<SDL.h>
 	<map>
 
-1743243557 source:d:\2025_stale\projects\cpp\gameengine\main.cpp
+1762887559 source:d:\2025_stale\projects\cpp\gameengine\main.cpp
 	"Engine.h"
+	"Timer.h"
 
 1743243557 d:\2025_stale\projects\cpp\gameengine\src\core\engine.h
 	"SDL.h"
 	"SDL_image.h"
 	"SDL_ttf.h"
 
-1762714639 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
+1762887791 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Demonic.h"
+	"Input.h"
+	"Timer.h"
 
 1762635706 d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.h
 	<string>
@@ -140,9 +143,10 @@
 	<SDL.h>
 	"TextureManager.h"
 
-1762699213 source:d:\2025_stale\projects\cpp\gameengine\src\characters\demonic.cpp
+1762888263 source:d:\2025_stale\projects\cpp\gameengine\src\characters\demonic.cpp
 	"Demonic.h"
 	"TextureManager.h"
+	"Input.h"
 
 1762698000 d:\2025_stale\projects\cpp\gameengine\src\characters\demonic.h
 	"Character.h"
@@ -168,7 +172,7 @@
 1762623743 d:\2025_stale\projects\cpp\gameengine\src\physics\vector2d.h
 	<iostream>
 
-1762698249 d:\2025_stale\projects\cpp\gameengine\src\physics\rigidbody.h
+1762886010 d:\2025_stale\projects\cpp\gameengine\src\physics\rigidbody.h
 	"Vector2D.h"
 
 1762714833 source:d:\2025_stale\projects\cpp\gameengine\src\characters\warrior.cpp
@@ -179,4 +183,17 @@
 	"Character.h"
 	"Animation.h"
 	"RigidBody.h"
+
+1762804330 source:d:\2025_stale\projects\cpp\gameengine\src\inputs\input.cpp
+	"Input.h"
+	"Engine.h"
+
+1762804076 d:\2025_stale\projects\cpp\gameengine\src\inputs\input.h
+	"SDL.h"
+
+1762887648 source:d:\2025_stale\projects\cpp\gameengine\src\timer\timer.cpp
+	"Timer.h"
+	"SDL.h"
+
+1762887378 d:\2025_stale\projects\cpp\gameengine\src\timer\timer.h
 

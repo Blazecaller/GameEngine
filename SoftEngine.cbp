@@ -22,6 +22,10 @@
 					<Add directory="src/Characrers" />
 					<Add directory="src/Character" />
 					<Add directory="src/Animation" />
+					<Add directory="src/Inputs" />
+					<Add directory="src/Timer" />
+					<Add directory="src/Layer" />
+					<Add directory="src/Map" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -40,6 +44,10 @@
 					<Add directory="src/Characrers" />
 					<Add directory="src/Character" />
 					<Add directory="src/Animation" />
+					<Add directory="src/Inputs" />
+					<Add directory="src/Timer" />
+					<Add directory="src/Layer" />
+					<Add directory="src/Map" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -62,11 +70,23 @@
 		<Unit filename="src/Core/Engine.h" />
 		<Unit filename="src/Graphics/TextureManager.cpp" />
 		<Unit filename="src/Graphics/TextureManager.h" />
+		<Unit filename="src/Inputs/Input.cpp" />
+		<Unit filename="src/Inputs/Input.h" />
+		<Unit filename="src/Map/GameMap.h" />
+		<Unit filename="src/Map/Layer.h" />
+		<Unit filename="src/Map/TileLayer.cpp" />
+		<Unit filename="src/Map/TileLayer.h" />
 		<Unit filename="src/Object/GameObject.h" />
 		<Unit filename="src/Object/IObject.h" />
 		<Unit filename="src/Physics/RigidBody.h" />
 		<Unit filename="src/Physics/Transform.h" />
 		<Unit filename="src/Physics/Vector2D.h" />
-		<Extensions />
+		<Unit filename="src/Timer/Timer.cpp" />
+		<Unit filename="src/Timer/Timer.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

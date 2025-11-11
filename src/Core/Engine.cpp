@@ -1,6 +1,8 @@
 #include "Engine.h"
 #include "TextureManager.h"
 #include "Demonic.h"
+#include "Input.h"
+#include "Timer.h"
 
 Engine* Engine::s_Instance = nullptr;
 Demonic* player = nullptr;
@@ -31,7 +33,11 @@ bool Engine::Init(){
         return false;
     }
     TTF_Init();
-    TextureManager::GetInstance()->Load("player", "assets/Karasu_tengu/Attack_1.png");
+
+    //Load sprite texture
+    TextureManager::GetInstance()->Load("player", "assets/Karasu_tengu/idle.png");
+    TextureManager::GetInstance()->Load("player_run", "assets/Karasu_tengu/Run.png");
+
     player = new Demonic(new Properties(100, 200, 128, 128, "player"));
 
 
@@ -65,7 +71,8 @@ void Engine::Quit(){
   * @todo: document this function
   */
 void Engine::Update(){
-    player->Update(0);
+    float dt = Timer::GetInstance()->GetDeltaTime();
+    player->Update(dt);
 }
 
 /** @brief Render
@@ -86,22 +93,7 @@ void Engine::Render(){
   * @todo: document this function
   */
 void Engine::Events(){
-    SDL_Event event;
-    SDL_PollEvent(&event);
-    switch(event.type){
-        case SDL_QUIT:
-            Quit();
-            break;
-
-        case SDL_KEYDOWN:
-            switch (event.key.keysym.sym){
-                case SDLK_ESCAPE:
-                    Quit();
-                    break;
-            }
-            break;
-
-    }
+    Input::GetInstance()->Listen();
 }
 
 /** @brief Engine
