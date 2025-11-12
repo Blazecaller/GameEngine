@@ -44,7 +44,7 @@
 	"SDL_image.h"
 	"SDL_ttf.h"
 
-1762887791 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
+1762973924 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Demonic.h"
@@ -196,4 +196,94 @@
 	"SDL.h"
 
 1762887378 d:\2025_stale\projects\cpp\gameengine\src\timer\timer.h
+
+1762975734 source:d:\2025_stale\projects\cpp\gameengine\src\map\tilelayer.cpp
+	"TileLayer.h"
+
+1762890199 d:\2025_stale\projects\cpp\gameengine\src\map\tilelayer.h
+	"Layer.h"
+	<string>
+	<vector>
+
+1762889341 d:\2025_stale\projects\cpp\gameengine\src\map\layer.h
+
+1762979145 source:d:\2025_stale\projects\cpp\gameengine\src\map\mapparser.cpp
+	"MapParser.h"
+
+1762978895 d:\2025_stale\projects\cpp\gameengine\src\map\mapparser.h
+	"tinyxml.h"
+	<map>
+	<string>
+	"GameMap.h"
+	"TileLayer.h"
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1376507762 d:\2025_stale\projects\cpp\gameengine\src\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1376507762 d:\2025_stale\projects\cpp\gameengine\src\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\vendor\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1376507762 d:\2025_stale\projects\cpp\gameengine\src\vendor\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\vendor\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1376507762 d:\2025_stale\projects\cpp\gameengine\src\vendor\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\vendor\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1376507762 source:d:\2025_stale\projects\cpp\gameengine\src\vendor\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1762979034 d:\2025_stale\projects\cpp\gameengine\src\map\gamemap.h
+	"Layer.h"
+	<vector>
 
