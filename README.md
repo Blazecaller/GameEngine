@@ -1,2 +1,0 @@
-# GameEngine
-Game engine development
