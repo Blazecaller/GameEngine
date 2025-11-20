@@ -17,8 +17,8 @@ bool MapParser::Parse(std::string id, std::string source){
 
     TiXmlElement *root = xml.RootElement();
     int rowcount=0, colcount=0, tilesize=0;
-    root->Attribute("width", &rowcount);
-    root->Attribute("height", &colcount);
+    root->Attribute("width", &colcount);
+    root->Attribute("height", &rowcount);
     root->Attribute("tilewidth", &tilesize);
 
     //Parse tile sets

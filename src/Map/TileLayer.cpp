@@ -15,9 +15,9 @@ m_TileSize(tilesize), m_ColCount(colcount), m_RowCount(rowcount), m_TileMap(tile
 }
 
 void TileLayer::Render(){
-    for(unsigned int i = 0; i< m_RowCount; i++)
+    for(unsigned int i = 0; i< m_ColCount; i++)
     {
-        for(unsigned int j = 0; j < m_ColCount; j++)
+        for(unsigned int j = 0; j < m_RowCount; j++)
         {
             int tileID = m_TileMap[i][j];
             if(tileID == 0)
