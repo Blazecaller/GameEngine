@@ -23,7 +23,7 @@ class TileLayer : public Layer{
 
     private:
         int m_TileSize;
-        int m_RowCount, m_ColCount;
+        int m_ColCount, m_RowCount;
         TileMap m_TileMap;
         TilesetList m_Tilesets;
 };

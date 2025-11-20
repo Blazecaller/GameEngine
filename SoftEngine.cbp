@@ -26,6 +26,7 @@
 					<Add directory="src/Timer" />
 					<Add directory="src/Layer" />
 					<Add directory="src/Map" />
+					<Add directory="src/Debugging" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -49,6 +50,7 @@
 					<Add directory="src/Layer" />
 					<Add directory="src/Map" />
 					<Add directory="src/Vendor/TinyXml" />
+					<Add directory="src/Debugging" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -69,6 +71,7 @@
 		<Unit filename="src/Characters/Warrior.h" />
 		<Unit filename="src/Core/Engine.cpp" />
 		<Unit filename="src/Core/Engine.h" />
+		<Unit filename="src/Debugging/UtilDebug.h" />
 		<Unit filename="src/Graphics/TextureManager.cpp" />
 		<Unit filename="src/Graphics/TextureManager.h" />
 		<Unit filename="src/Inputs/Input.cpp" />
