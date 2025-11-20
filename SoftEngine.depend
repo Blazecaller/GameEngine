@@ -39,24 +39,27 @@
 	"Engine.h"
 	"Timer.h"
 
-1743243557 d:\2025_stale\projects\cpp\gameengine\src\core\engine.h
+1763582866 d:\2025_stale\projects\cpp\gameengine\src\core\engine.h
 	"SDL.h"
 	"SDL_image.h"
 	"SDL_ttf.h"
+	"GameMap.h"
 
-1762973924 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
+1763668327 source:d:\2025_stale\projects\cpp\gameengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Demonic.h"
 	"Input.h"
 	"Timer.h"
+	"MapParser.h"
+	<iostream>
 
-1762635706 d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.h
+1763581992 d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.h
 	<string>
 	<SDL.h>
 	<map>
 
-1762637466 source:d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.cpp
+1763588046 source:d:\2025_stale\projects\cpp\gameengine\src\graphics\texturemanager.cpp
 	"TextureManager.h"
 	"Engine.h"
 
@@ -143,7 +146,7 @@
 	<SDL.h>
 	"TextureManager.h"
 
-1762888263 source:d:\2025_stale\projects\cpp\gameengine\src\characters\demonic.cpp
+1763583801 source:d:\2025_stale\projects\cpp\gameengine\src\characters\demonic.cpp
 	"Demonic.h"
 	"TextureManager.h"
 	"Input.h"
@@ -197,20 +200,23 @@
 
 1762887378 d:\2025_stale\projects\cpp\gameengine\src\timer\timer.h
 
-1762975734 source:d:\2025_stale\projects\cpp\gameengine\src\map\tilelayer.cpp
+1763670061 source:d:\2025_stale\projects\cpp\gameengine\src\map\tilelayer.cpp
 	"TileLayer.h"
+	"TextureManager.h"
+	"UtilDebug.h"
 
-1762890199 d:\2025_stale\projects\cpp\gameengine\src\map\tilelayer.h
+1763584149 d:\2025_stale\projects\cpp\gameengine\src\map\tilelayer.h
 	"Layer.h"
 	<string>
 	<vector>
 
 1762889341 d:\2025_stale\projects\cpp\gameengine\src\map\layer.h
 
-1762979145 source:d:\2025_stale\projects\cpp\gameengine\src\map\mapparser.cpp
+1763670081 source:d:\2025_stale\projects\cpp\gameengine\src\map\mapparser.cpp
 	"MapParser.h"
+	"UtilDebug.h"
 
-1762978895 d:\2025_stale\projects\cpp\gameengine\src\map\mapparser.h
+1763655563 d:\2025_stale\projects\cpp\gameengine\src\map\mapparser.h
 	"tinyxml.h"
 	<map>
 	<string>
@@ -283,7 +289,10 @@
 	"tinyxml.h"
 	<windows.h>
 
-1762979034 d:\2025_stale\projects\cpp\gameengine\src\map\gamemap.h
+1763666134 d:\2025_stale\projects\cpp\gameengine\src\map\gamemap.h
 	"Layer.h"
 	<vector>
+
+1763669996 d:\2025_stale\projects\cpp\gameengine\src\debugging\utildebug.h
+	<iostream>
 

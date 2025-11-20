@@ -35,6 +35,13 @@ void TextureManager::DrawFrame(std::string id, int x, int y, int width, int heig
 
 }
 
+void TextureManager::DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int frame, SDL_RendererFlip flip){
+    SDL_Rect srcRect = {tileSize*frame, tileSize*row, tileSize, tileSize};
+    SDL_Rect dstRect = {x, y, tileSize, tileSize};
+    SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[tilesetID], &srcRect, &dstRect, 0, 0, flip);
+
+}
+
 void TextureManager::Drop(std::string id){
     SDL_DestroyTexture(m_TextureMap[id]);
     m_TextureMap.erase(id); //texture is destroyed but not removed; erase it (no need to put that in memory anymore).
