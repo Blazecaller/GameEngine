@@ -6,8 +6,6 @@
 #include "SDL_ttf.h"
 #include "GameMap.h"
 
-#define SCREEN_WIDTH  960
-#define SCREEN_HEIGHT 640
 
 class Engine{
 

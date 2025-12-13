@@ -5,6 +5,7 @@
 #include "Timer.h"
 #include "MapParser.h"
 #include <iostream>
+#include "Camera.h"
 
 Engine* Engine::s_Instance = nullptr;
 Demonic* player = nullptr;
@@ -47,8 +48,11 @@ bool Engine::Init(){
     //Load sprite texture
     TextureManager::GetInstance()->Load("player", "assets/characters/Karasu_tengu/idle.png");
     TextureManager::GetInstance()->Load("player_run", "assets/characters/Karasu_tengu/Run.png");
+    TextureManager::GetInstance()->Load("bg", "assets/images/bg.jpg");
 
     player = new Demonic(new Properties(100, 200, 128, 128, "player"));
+
+    Camera::GetInstance()->SetTarget(player->GetOrigin());
     return m_IsRunning = true;
 }
 
@@ -82,6 +86,7 @@ void Engine::Update(){
     float dt = Timer::GetInstance()->GetDeltaTime();
     m_LevelMap->Update();
     player->Update(dt);
+    Camera::GetInstance()->Update(dt);
 }
 
 /** @brief Render
@@ -92,7 +97,9 @@ void Engine::Render(){
     SDL_SetRenderDrawColor(m_Renderer, 0, 127, 127, 255);
     SDL_RenderClear(m_Renderer);
 
+    TextureManager::GetInstance()->Draw("bg", 0, 0, 1920, 1080);
     m_LevelMap->Render();
+
     player->Draw();
     SDL_RenderPresent(m_Renderer);
 
