@@ -6,6 +6,7 @@
 class GameMap{
 
     public:
+        GameMap(){}
         void Render(){
             for(unsigned int i=0; i< m_MapLayers.size(); i++)
             {

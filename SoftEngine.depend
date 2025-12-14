@@ -300,19 +300,19 @@
 	"Engine.h"
 	"Timer.h"
 
-1765626816 c:\projeler\gameengine\src\core\engine.h
+1765661154 c:\projeler\gameengine\src\core\engine.h
 	"SDL.h"
 	"SDL_image.h"
 	"SDL_ttf.h"
 	"GameMap.h"
 
-1765620653 c:\projeler\gameengine\src\map\gamemap.h
+1765661485 c:\projeler\gameengine\src\map\gamemap.h
 	"Layer.h"
 	<vector>
 
 1765620653 c:\projeler\gameengine\src\map\layer.h
 
-1765620653 c:\projeler\gameengine\src\timer\timer.h
+1765712695 c:\projeler\gameengine\src\timer\timer.h
 
 1765620653 source:c:\projeler\gameengine\src\animation\animation.cpp
 	"Animation.h"
@@ -327,15 +327,21 @@
 	<SDL.h>
 	<map>
 
-1765626442 source:c:\projeler\gameengine\src\characters\demonic.cpp
+1765713480 source:c:\projeler\gameengine\src\characters\demonic.cpp
 	"Demonic.h"
 	"TextureManager.h"
 	"Input.h"
+	"Camera.h"
+	"Engine.h"
+	"CollisionHandler.h"
+	"UtilDebug.h"
 
-1765620653 c:\projeler\gameengine\src\characters\demonic.h
+1765713493 c:\projeler\gameengine\src\characters\demonic.h
 	"Character.h"
 	"Animation.h"
 	"RigidBody.h"
+	"Collider.h"
+	"Vector2D.h"
 
 1765620653 c:\projeler\gameengine\src\characters\character.h
 	"GameObject.h"
@@ -357,7 +363,7 @@
 1765620653 c:\projeler\gameengine\src\physics\vector2d.h
 	<iostream>
 
-1765620653 c:\projeler\gameengine\src\physics\rigidbody.h
+1765708816 c:\projeler\gameengine\src\physics\rigidbody.h
 	"Vector2D.h"
 
 1765620653 c:\projeler\gameengine\src\inputs\input.h
@@ -372,7 +378,7 @@
 	"Animation.h"
 	"RigidBody.h"
 
-1765628704 source:c:\projeler\gameengine\src\core\engine.cpp
+1765712063 source:c:\projeler\gameengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Demonic.h"
@@ -409,7 +415,7 @@
 	<string>
 	<vector>
 
-1765628267 source:c:\projeler\gameengine\src\graphics\texturemanager.cpp
+1765628855 source:c:\projeler\gameengine\src\graphics\texturemanager.cpp
 	"TextureManager.h"
 	"Engine.h"
 	"Camera.h"
@@ -422,7 +428,7 @@
 	"MapParser.h"
 	"UtilDebug.h"
 
-1765620653 c:\projeler\gameengine\src\debugging\utildebug.h
+1765709300 c:\projeler\gameengine\src\debugging\utildebug.h
 	<iostream>
 
 1765620653 source:c:\projeler\gameengine\src\map\tilelayer.cpp
@@ -430,7 +436,7 @@
 	"TextureManager.h"
 	"UtilDebug.h"
 
-1765620653 source:c:\projeler\gameengine\src\timer\timer.cpp
+1765712685 source:c:\projeler\gameengine\src\timer\timer.cpp
 	"Timer.h"
 	"SDL.h"
 
@@ -462,4 +468,18 @@
 
 1765627171 source:c:\projeler\gameengine\src\camera\camera.cpp
 	"Camera.h"
+
+1765713021 source:c:\projeler\gameengine\src\collision\collisionhandler.cpp
+	"CollisionHandler.h"
+	"Engine.h"
+	"UtilDebug.h"
+
+1765661944 c:\projeler\gameengine\src\collision\collisionhandler.h
+	"SDL.h"
+	<vector>
+	"TileLayer.h"
+	"GameMap.h"
+
+1765711957 c:\projeler\gameengine\src\physics\collider.h
+	"SDL.h"
 

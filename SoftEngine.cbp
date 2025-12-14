@@ -28,6 +28,7 @@
 					<Add directory="src/Map" />
 					<Add directory="src/Debugging" />
 					<Add directory="src/Camera" />
+					<Add directory="src/Collision" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -53,6 +54,7 @@
 					<Add directory="src/Vendor/TinyXml" />
 					<Add directory="src/Debugging" />
 					<Add directory="src/Camera" />
+					<Add directory="src/Collision" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -73,6 +75,8 @@
 		<Unit filename="src/Characters/Demonic.h" />
 		<Unit filename="src/Characters/Warrior.cpp" />
 		<Unit filename="src/Characters/Warrior.h" />
+		<Unit filename="src/Collision/CollisionHandler.cpp" />
+		<Unit filename="src/Collision/CollisionHandler.h" />
 		<Unit filename="src/Core/Engine.cpp" />
 		<Unit filename="src/Core/Engine.h" />
 		<Unit filename="src/Debugging/UtilDebug.h" />
@@ -88,6 +92,7 @@
 		<Unit filename="src/Map/TileLayer.h" />
 		<Unit filename="src/Object/GameObject.h" />
 		<Unit filename="src/Object/IObject.h" />
+		<Unit filename="src/Physics/Collider.h" />
 		<Unit filename="src/Physics/Point.h" />
 		<Unit filename="src/Physics/RigidBody.h" />
 		<Unit filename="src/Physics/Transform.h" />

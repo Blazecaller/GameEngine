@@ -50,7 +50,7 @@ bool Engine::Init(){
     TextureManager::GetInstance()->Load("player_run", "assets/characters/Karasu_tengu/Run.png");
     TextureManager::GetInstance()->Load("bg", "assets/images/bg.jpg");
 
-    player = new Demonic(new Properties(100, 200, 128, 128, "player"));
+    player = new Demonic(new Properties(120, 70, 128, 128, "player"));
 
     Camera::GetInstance()->SetTarget(player->GetOrigin());
     return m_IsRunning = true;
