@@ -483,3 +483,190 @@
 1765711957 c:\projeler\gameengine\src\physics\collider.h
 	"SDL.h"
 
+1772197565 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\main.cpp
+	"Engine.h"
+	"Timer.h"
+
+1772197568 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\core\engine.h
+	"SDL.h"
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"GameMap.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\map\gamemap.h
+	"Layer.h"
+	<vector>
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\map\layer.h
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\timer\timer.h
+
+1772197568 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\core\engine.cpp
+	"Engine.h"
+	"TextureManager.h"
+	"Demonic.h"
+	"Input.h"
+	"Timer.h"
+	"MapParser.h"
+	<iostream>
+	"Camera.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\graphics\texturemanager.h
+	<string>
+	<SDL.h>
+	<map>
+
+1772197568 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\characters\demonic.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
+	"Collider.h"
+	"Vector2D.h"
+
+1772197568 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\characters\character.h
+	"GameObject.h"
+	"Transform.h"
+	"string"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\object\gameobject.h
+	"IObject.h"
+	"Transform.h"
+	"SDL.h"
+	"string"
+	"Point.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\object\iobject.h
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\physics\transform.h
+	"Vector2D.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\physics\vector2d.h
+	<iostream>
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\physics\point.h
+	<iostream>
+
+1772197568 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\animation\animation.h
+	<string>
+	<SDL.h>
+	"TextureManager.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\physics\rigidbody.h
+	"Vector2D.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\physics\collider.h
+	"SDL.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\inputs\input.h
+	"SDL.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\map\mapparser.h
+	"tinyxml.h"
+	<map>
+	<string>
+	"GameMap.h"
+	"TileLayer.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\vendor\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\vendor\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1772197570 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\map\tilelayer.h
+	"Layer.h"
+	<string>
+	<vector>
+
+1772197568 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\camera\camera.h
+	"SDL.h"
+	"Point.h"
+	"Vector2D.h"
+
+1772197568 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\animation\animation.cpp
+	"Animation.h"
+
+1772197568 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\camera\camera.cpp
+	"Camera.h"
+
+1783617805 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\characters\demonic.cpp
+	"Demonic.h"
+	"TextureManager.h"
+	"Input.h"
+	"Camera.h"
+	"Engine.h"
+	"CollisionHandler.h"
+	"UtilDebug.h"
+
+1772197568 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\collision\collisionhandler.h
+	"SDL.h"
+	<vector>
+	"TileLayer.h"
+	"GameMap.h"
+
+1772199023 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\debugging\utildebug.h
+	<iostream>
+
+1772197568 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\characters\warrior.cpp
+	"Warrior.h"
+	"TextureManager.h"
+
+1772197568 d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\characters\warrior.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
+
+1772197568 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\collision\collisionhandler.cpp
+	"CollisionHandler.h"
+	"Engine.h"
+	"UtilDebug.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\graphics\texturemanager.cpp
+	"TextureManager.h"
+	"Engine.h"
+	"Camera.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\inputs\input.cpp
+	"Input.h"
+	"Engine.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\map\mapparser.cpp
+	"MapParser.h"
+	"UtilDebug.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\map\tilelayer.cpp
+	"TileLayer.h"
+	"TextureManager.h"
+	"UtilDebug.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\timer\timer.cpp
+	"Timer.h"
+	"SDL.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\vendor\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\vendor\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\vendor\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1772197570 source:d:\yusufdosyalar\cpp_projects\gameengine\gameengine\src\vendor\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+

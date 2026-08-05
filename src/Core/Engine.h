@@ -1,6 +1,8 @@
 #ifndef ENGINE_H
 #define ENGINE_H
 
+#define SDL_MAIN_HANDLED
+
 #include "SDL.h"
 #include "SDL_image.h"
 #include "SDL_ttf.h"
